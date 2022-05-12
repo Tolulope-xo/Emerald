@@ -1,0 +1,320 @@
+@font-face {
+    font-family: Sora;
+    src: url(./assets/Sora-Bold.ttf);
+}
+
+@font-face {
+    font-family: SemiBold;
+    src: url(./assets/Sora-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Display;
+    src: url(./assets/RedHatDisplay-Regular.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: inline-flex;
+    position: relative;
+    left: 3rem;
+    top: 5px;
+}
+
+.logo_img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: -2rem;
+}
+
+.logo_name {
+    font-size: 30px;
+    font-family: Sora;
+    color: #4A05A1;
+}
+
+.burger {
+    display: none;
+}
+
+nav {
+    display: flex;
+    margin: 1rem auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.menu {
+    display: flex;
+    text-decoration: none;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+    font-weight: bold;
+
+}
+
+.nav-link {
+    font-family: Display;
+    color: #000000;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #4A05A1;
+    color: white;
+    font-family: SemiBold;
+    font-size: 16px;
+    border-radius: 6px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #4A05A1;
+}
+
+.fewBtn {
+    position: relative;
+    left: 12rem;
+}
+
+.hero {
+    width: 950px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+
+.hero h2 {
+    font-family: Sora;
+    font-size: 45px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.hero .color {
+    color: #4A05A1;
+}
+
+.hero p {
+    font-family: Display;
+    font-size: 15px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.buttons {
+    margin-top: 70px;
+    gap: 1rem;
+}
+
+
+.buttons .outline {
+    margin-left: 1rem !important;
+    color: #4A05A1;
+    border: 1px solid #4A05A1;
+}
+
+.images {
+    margin-top: 5%;
+}
+
+
+.first {
+    width: 20%;
+}
+
+.second {
+    width: 20%;
+    margin-left: 55%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .logo{
+        left: 2rem;
+    }
+    .hero {
+        width: 100vw;
+    }
+
+    .images {
+        display: inline-flex;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 12rem;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    nav {
+        margin: 1rem auto;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    nav li {
+        font-size: 15px;
+    }
+
+    .fewBtn {
+        position: relative;
+        left: 1rem;
+        width: 9rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .logo {
+        display: inline-flex;
+        position: absolute;
+        top: 1rem;
+        right: 30rem;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 2rem;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+
+    }
+
+    .hero {
+        width: 100vw;
+    }
+
+    .images {
+        display: inline-flex;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 12rem;
+    }
+
+
+    .first,
+    .second {
+        width: 30%;
+    }
+
+    .second {
+        margin-left: 17rem;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+    .logo {
+        display: inline-flex;
+        position: relative;
+        left: 2rem;
+        top: 1rem;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        right: 0rem;
+        top: 2rem;
+        cursor: pointer;
+    }
+
+    nav {
+        display: block;
+        margin: auto;
+        text-align: left;
+        height: 100vh;
+    }
+    
+    nav .menu {
+        text-align: center;
+        display: none;
+        background-color: #c3a6e7a6;
+    }
+
+    nav .menu.active {
+        display: block;
+    }
+
+    .fewBtn {
+        left: 0rem;
+    }
+
+    .hero {
+        width: 100%;
+        position: relative;
+        margin-top: -55vh;
+    }
+
+
+    .hero h2,
+    .hero p {
+        font-size: 30px;
+        width: 90vw;
+        margin: auto;
+    }
+
+    .hero p {
+        font-size: 15px;
+        line-height: 21px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: #000000;
+    }
+
+    .buttons {
+        gap: 1px;
+    }
+
+    .firstbutton,
+    .btn {
+        width: 10rem;
+    }
+    .images{
+        width: 90%;
+    }
+  .first {
+        position: absolute;
+        top: 5rem;
+        width: 90vw;
+        z-index: -1;
+    }
+
+    .second {
+        display: none;
+    }
+
+
+}
