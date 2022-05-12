@@ -245,7 +245,7 @@ button {
     .burger {
         display: block;
         position: absolute;
-        right: 0rem;
+        right: 1rem;
         top: 2rem;
         cursor: pointer;
     }
